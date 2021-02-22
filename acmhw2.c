@@ -1,6 +1,6 @@
 /*****************************************************************************************************
 * N.Kozak // Lviv'2020 // ACM // Turing machine and algorithm for logical conjunction implementation *
-*    file: acmhw4.c                                                                                  *
+*    file: acmhw2.c                                                                                  *
 ******************************************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
