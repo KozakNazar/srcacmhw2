@@ -137,7 +137,7 @@ void runner(MT * mt){
 #endif			
 			}
 			else if (*mt->debugType == 3){
-				getchar();
+				(void)getchar();
 			}
 			else{
 #if defined(__linux__) || defined(__unix__) || defined(__APPLE__) 
@@ -225,7 +225,7 @@ int main(){
 	ch -= '0';
 
 	mt.run(&mt);
-	getchar();
+	(void)getchar();
 
 	return 0;
 }
