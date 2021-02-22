@@ -129,9 +129,9 @@ void runner(MT * mt){
 		if (mt->statePrint){
 			mt->statePrint(mt);
 			if (*mt->debugType == 2){
-#ifdef __linux__ 
+#if defined(__linux__) || defined(__unix__) || defined(__APPLE__) 
 				usleep(250000);
-#elif _WIN32    
+#elif defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)    
 				Sleep(250);
 #else
 #endif			
@@ -140,9 +140,9 @@ void runner(MT * mt){
 				getchar();
 			}
 			else{
-#ifdef __linux__ 
+#if defined(__linux__) || defined(__unix__) || defined(__APPLE__) 
 				usleep(25000);
-#elif _WIN32    
+#elif defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__NT__)    
 				Sleep(25);
 #else
 #endif
