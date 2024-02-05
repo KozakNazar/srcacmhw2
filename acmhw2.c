@@ -70,13 +70,13 @@ typedef unsigned char tapeElementType;
 
 //#define MT_BEGIN_POSITION_STATE 127
 
-typedef struct structMT{
+typedef struct StructMT{
 	tapeElementType tape[TAPE_SIZE];
 	PROGRAM * initProgram;
 	PROGRAM * program;
-	void(*stepRun)(struct structMT * mt, PROGRAM program);
-	void(*run)(struct structMT * mt);
-	void(*statePrint)(struct structMT * mt);
+	void(*stepRun)(struct StructMT * mt, PROGRAM program);
+	void(*run)(struct StructMT * mt);
+	void(*statePrint)(struct StructMT * mt);
 	unsigned char * debugType;
 	Q state;
 	unsigned int positionState;
